@@ -1,0 +1,21 @@
+{
+  "name": "baby-care",
+  "description": "catalogue",
+  "main": "index.js",
+  "authors": [
+    "Constantine Podlesny"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/pfskiev/baby-care",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

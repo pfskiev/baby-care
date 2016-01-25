@@ -1,0 +1,19 @@
+{
+  "name": "baby-care",
+  "version": "1.1.1",
+  "description": "catalogue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfskiev/baby-care.git"
+  },
+  "author": "Constantine Podlesny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfskiev/baby-care/issues"
+  },
+  "homepage": "https://github.com/pfskiev/baby-care#readme"
+}
