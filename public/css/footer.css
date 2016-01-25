@@ -1,0 +1,108 @@
+footer > div.row > div.col-md-6 {
+  padding-top: 29px;
+  padding-left: 21px; }
+
+footer > div.row > div.col-md-6 > h3 {
+  margin-left: 22px;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  font-size: 20px;
+  color: #333; }
+
+footer > div.row > div.col-md-6 > input {
+  margin-left: 23px;
+  margin-top: 9px;
+  padding: 9px;
+  display: block;
+  float: left;
+  width: 280px;
+  height: 36px;
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 20px;
+  color: #333;
+  border: 1px solid #aaa; }
+
+footer > div.row > div.col-md-6 > a {
+  margin-top: 9px;
+  margin-left: 9px;
+  padding-top: 7px;
+  display: block;
+  float: left;
+  height: 35px;
+  width: 144px;
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none;
+  background: #079e9e;
+  transition: background-color 200ms ease; }
+
+footer > div.row > div.col-md-6 > a:hover, footer > div.row > div.col-md-6 > a:focus {
+  background: #48d1cc; }
+
+footer > div.row > div.col-md-6 > a.facebook {
+  margin-top: 60px;
+  margin-left: 317px;
+  background: url(../img/39x39_facebook.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px;
+  border: none;
+  transition: background 200ms ease; }
+
+footer > div.row > div.col-md-6 > a.facebook:hover, footer > div.row > div.col-md-6 > a.facebook:focus {
+  background: url(../img/39x39_facebook_up.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
+
+footer > div.row > div.col-md-6 > a.pinterest {
+  margin-top: 60px;
+  margin-left: 14px;
+  background: url(../img/39x39_pinterest_up.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px;
+  border: none;
+  transition: background 200ms ease; }
+
+footer > div.row > div.col-md-6 > a.pinterest:hover, footer > div.row > div.col-md-6 > a.pinterest:focus {
+  background: url(../img/39x39_pinterest_normal.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
+
+footer > div.row > div.col-md-6 > a.twitter {
+  margin-top: 60px;
+  margin-left: 14px;
+  background: url(../img/39x39_twitter_normal.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px;
+  border: none;
+  transition: background 200ms ease; }
+
+footer > div.row > div.col-md-6 > a.twitter:hover, footer > div.row > div.col-md-6 > a.twitter:focus {
+  background: url(../img/39x39_twitter.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
+
+footer > p {
+  display: block;
+  position: relative;
+  bottom: -35px;
+  text-align: center;
+  width: 1024px; }
+
+footer > span.top-line {
+  display: block;
+  width: 100%;
+  max-width: 1024px;
+  height: 15px;
+  position: relative;
+  top: 0;
+  background-image: url(../img/footer-top-line.png); }
+
+/*# sourceMappingURL=footer.css.map */
