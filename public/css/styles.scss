@@ -369,11 +369,12 @@ footer>span.top-line {
   color: #333;
 }
 
-section>div.row {
+section>div.row:last-child {
   padding-bottom: 30px;
 }
 
 section>div.row img{
+  margin-top:30px;
   margin-left: 30px;
 }
 
@@ -381,6 +382,7 @@ section>div.row p {
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
   font-size: 17px;
   color: #333;
+  text-align: justify;
 }
 
 section>div.row p.title {
@@ -403,4 +405,3 @@ section>div.row>div.col-md-9>div{
 section>div.row>div.col-md-3>div {
   margin-top: 80px;
 }
-
