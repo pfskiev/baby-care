@@ -71,8 +71,10 @@ nav > ul > li > a {
   color: #333;
   list-style: none;
   text-transform: uppercase;
-  -webkit-transition: color 200ms ease;
   transition: color 200ms ease; }
+
+nav > ul > li > a.active {
+  color: #079e9e; }
 
 nav > ul > li > a:focus, nav > ul > li > a:hover {
   color: #009999;
@@ -193,7 +195,7 @@ footer > div.row > div.col-md-6 > input {
   padding: 9px;
   display: block;
   float: left;
-  width: 186px;
+  width: 280px;
   height: 36px;
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
   font-size: 20px;
@@ -224,7 +226,14 @@ footer > div.row > div.col-md-6 > a.facebook {
   background-size: contain;
   width: 39px;
   height: 39px;
-  border: none; }
+  border: none;
+  transition: background 200ms ease; }
+
+footer > div.row > div.col-md-6 > a.facebook:hover {
+  background: url(../img/39x39_facebook_up.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
 
 footer > div.row > div.col-md-6 > a.pinterest {
   margin-top: 60px;
@@ -233,7 +242,14 @@ footer > div.row > div.col-md-6 > a.pinterest {
   background-size: contain;
   width: 39px;
   height: 39px;
-  border: none; }
+  border: none;
+  transition: background 200ms ease; }
+
+footer > div.row > div.col-md-6 > a.pinterest:hover {
+  background: url(../img/39x39_pinterest_normal.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
 
 footer > div.row > div.col-md-6 > a.twitter {
   margin-top: 60px;
@@ -242,7 +258,14 @@ footer > div.row > div.col-md-6 > a.twitter {
   background-size: contain;
   width: 39px;
   height: 39px;
-  border: none; }
+  border: none;
+  transition: background 200ms ease; }
+
+footer > div.row > div.col-md-6 > a.twitter:hover {
+  background: url(../img/39x39_twitter.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
 
 footer > p {
   display: block;
@@ -270,10 +293,18 @@ footer > span.top-line {
   color: #333;
   content: "/\00a0"; }
 
+.breadcrumb > li.active {
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 12px;
+  color: #079e9e; }
+
 .breadcrumb > li > a {
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
   font-size: 12px;
   color: #333; }
+
+section > div.row {
+  padding-bottom: 30px; }
 
 section > div.row img {
   margin-left: 30px; }
@@ -287,5 +318,14 @@ section > div.row p.title {
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
   font-size: 17px;
   color: #079e9e; }
+
+section > div.row p.title.main {
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 17px;
+  color: #079e9e;
+  text-transform: uppercase; }
+
+section > div.row > div.col-md-9 > div {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
