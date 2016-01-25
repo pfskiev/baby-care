@@ -328,4 +328,7 @@ section > div.row p.title.main {
 section > div.row > div.col-md-9 > div {
   margin-top: 30px; }
 
+section > div.row > div.col-md-3 > div {
+  margin-top: 0px; }
+
 /*# sourceMappingURL=styles.css.map */
