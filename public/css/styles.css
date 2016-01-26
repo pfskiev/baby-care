@@ -235,6 +235,7 @@ footer {
     margin-left: 113px; }
 
 .breadcrumb {
+  margin-bottom: 0 !important;
   padding-top: 20px;
   padding-left: 30px;
   background-color: inherit; }
@@ -261,6 +262,10 @@ section > div.row:last-child {
 section > div.row img {
   margin-top: 30px;
   margin-left: 30px; }
+
+section > div.row a > img {
+  margin-top: 0;
+  margin-left: 0; }
 
 section > div.row p {
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
@@ -290,11 +295,44 @@ section > div.row p.title.main {
 section > div.row > div.col-md-9 > div {
   margin-top: 30px; }
 
-section > div.row > div.col-md-3 > div {
-  margin-top: 80px; }
-
 section > div.row > div.col-md-3 > p {
   text-align: right; }
+
+section > div.row > div.col-md-3 > div {
+  margin-top: 20px; }
+
+section > div.row > div.col-md-3 > div a {
+  display: block;
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  transition: color 200ms ease; }
+
+section > div.row > div.col-md-3 > div > div {
+  padding-top: 10px; }
+
+section > div.row > div.col-md-3 > div > div a {
+  margin-top: 10px; }
+
+section > div.row > div.col-md-3 > div a[type='button'] {
+  font-size: 17px; }
+
+section > div.row > div.col-md-3 > div a[type='button']:hover, section > div.row > div.col-md-3 > div a[type='button']:focus {
+  color: #48d1cc; }
+
+section > div.row > div.col-md-3 > div {
+  margin-left: 30px; }
+
+section > div.row > div div > p.name, section > div.row > div div > p.price {
+  color: #666;
+  text-align: center; }
+
+.product-card:hover {
+  transition: box-shadow 200ms ease; }
+
+.product-card:hover {
+  box-shadow: black 0 0 17px -4px; }
 
 .open > .dropdown-menu.catalogue {
   position: absolute;
