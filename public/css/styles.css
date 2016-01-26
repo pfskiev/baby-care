@@ -334,6 +334,60 @@ section > div.row > div div > p.name, section > div.row > div div > p.price {
 .product-card:hover {
   box-shadow: black 0 0 17px -4px; }
 
+a.carousel-control.left, a.carousel-control.right {
+  background-image: none; }
+
+section a.facebook {
+  display: block;
+  float: left;
+  background: url(../img/39x39_facebook.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px;
+  border: none;
+  transition: background 200ms ease; }
+
+section a.facebook:hover, footer > div.row > div.col-md-6 > a.facebook:focus {
+  background: url(../img/39x39_facebook_up.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
+
+section a.pinterest {
+  display: block;
+  float: left;
+  background: url(../img/39x39_pinterest_up.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px;
+  border: none;
+  transition: background 200ms ease; }
+
+section a.pinterest:hover, footer > div.row > div.col-md-6 > a.pinterest:focus {
+  background: url(../img/39x39_pinterest_normal.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
+
+section a.twitter {
+  display: block;
+  float: left;
+  background: url(../img/39x39_twitter_normal.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px;
+  border: none;
+  transition: background 200ms ease; }
+
+section a.twitter:hover, footer > div.row > div.col-md-6 > a.twitter:focus {
+  background: url(../img/39x39_twitter.png);
+  background-size: contain;
+  width: 39px;
+  height: 39px; }
+
+#myCarousel {
+  top: 20px; }
+
 .open > .dropdown-menu.catalogue {
   position: absolute;
   width: 960px;
