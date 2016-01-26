@@ -1,3 +1,12 @@
+body {
+  font-size: 24px;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+  color: #666;
+  height: 967px;
+  width: 1024px;
+  background: #efefef;
+  background-size: contain; }
+
 @font-face {
   font-family: 'HelveticaNeueCyr-Light';
   font-style: normal;
@@ -13,15 +22,6 @@
   font-style: normal;
   font-weight: normal;
   src: local("HelveticaNeueCyr-UltraLight"), url("fonts/HelveticaNeueCyr-UltraLight.woff") format("woff"); }
-body {
-  font-size: 24px;
-  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
-  color: #666;
-  height: 967px;
-  width: 1024px;
-  background: #efefef;
-  background-size: contain; }
-
 header {
   background-color: #f5f5f5;
   width: 1039px; }
@@ -51,6 +51,29 @@ header .title {
   margin-left: 113px;
   font-family: 'HelveticaNeueCyr-Light', sans-serif;
   font-size: 17px;
+  color: #666; }
+
+.contact-wrapper {
+  padding-top: 37px;
+  padding-left: 50px; }
+
+.search-wrapper {
+  padding-top: 66px;
+  padding-left: 31px; }
+  .search-wrapper input {
+    padding: 7px;
+    font-family: 'HelveticaNeueCyr-Light', sans-serif;
+    font-size: 17px;
+    color: #666;
+    width: 259px;
+    height: 31px;
+    border: 1px solid #aaa; }
+
+.search-wrapper span.glyphicon.glyphicon-search {
+  font-size: 19px;
+  position: relative;
+  right: 33px;
+  top: 6px;
   color: #666; }
 
 nav, ul {
@@ -95,6 +118,13 @@ nav > ul > li > a.active {
 nav > ul > li > a:focus, nav > ul > li > a:hover {
   color: #079e9e;
   text-decoration: none; }
+
+footer > p {
+  display: block;
+  position: relative;
+  bottom: -35px;
+  text-align: center;
+  width: 1024px; }
 
 footer > div.row > div.col-md-6 {
   padding-top: 29px;
@@ -187,13 +217,6 @@ footer > div.row > div.col-md-6 > a.twitter:hover, footer > div.row > div.col-md
   width: 39px;
   height: 39px; }
 
-footer > p {
-  display: block;
-  position: relative;
-  bottom: -35px;
-  text-align: center;
-  width: 1024px; }
-
 footer > span.top-line {
   display: block;
   width: 100%;
@@ -202,6 +225,14 @@ footer > span.top-line {
   position: relative;
   top: 0;
   background-image: url(../img/footer-top-line.png); }
+
+footer {
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 17px;
+  color: #666; }
+  footer .title {
+    margin-top: 30px;
+    margin-left: 113px; }
 
 .breadcrumb {
   padding-top: 20px;
@@ -262,57 +293,6 @@ section > div.row > div.col-md-9 > div {
 section > div.row > div.col-md-3 > div {
   margin-top: 80px; }
 
-.telephone-icon {
-  margin-right: 10px;
-  display: block;
-  float: left;
-  width: 24px;
-  height: 17px;
-  background-image: url(../img/24x21_telephone_btn.png);
-  background-size: contain; }
-
-.life-icon {
-  margin-left: 3px;
-  margin-top: 2px;
-  margin-right: 7px;
-  display: block;
-  float: left;
-  width: 24px;
-  height: 13px;
-  background-image: url(../img/Life_icon.png);
-  background-size: contain; }
-
-footer {
-  font-family: 'HelveticaNeueCyr-Light', sans-serif;
-  font-size: 17px;
-  color: #666; }
-  footer .title {
-    margin-top: 30px;
-    margin-left: 113px; }
-
-.contact-wrapper {
-  padding-top: 37px;
-  padding-left: 50px; }
-
-.search-wrapper {
-  padding-top: 66px;
-  padding-left: 31px; }
-  .search-wrapper input {
-    padding: 7px;
-    font-family: 'HelveticaNeueCyr-Light', sans-serif;
-    font-size: 17px;
-    color: #666;
-    width: 259px;
-    height: 31px;
-    border: 1px solid #aaa; }
-
-.search-wrapper span.glyphicon.glyphicon-search {
-  font-size: 19px;
-  position: relative;
-  right: 33px;
-  top: 6px;
-  color: #666; }
-
 .open > .dropdown-menu.catalogue {
   position: absolute;
   width: 960px;
@@ -352,5 +332,25 @@ footer {
   bottom: 0;
   background-image: url(../img/bottom-line.png);
   z-index: 9999; }
+
+.telephone-icon {
+  margin-right: 10px;
+  display: block;
+  float: left;
+  width: 24px;
+  height: 17px;
+  background-image: url(../img/24x21_telephone_btn.png);
+  background-size: contain; }
+
+.life-icon {
+  margin-left: 3px;
+  margin-top: 2px;
+  margin-right: 7px;
+  display: block;
+  float: left;
+  width: 24px;
+  height: 13px;
+  background-image: url(../img/Life_icon.png);
+  background-size: contain; }
 
 /*# sourceMappingURL=styles.css.map */

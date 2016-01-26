@@ -1,3 +1,11 @@
+footer>p {
+  display: block;
+  position: relative;
+  bottom: -35px;
+  text-align: center;
+  width: 1024px;
+}
+
 footer>div.row>div.col-md-6 {
   padding-top: 29px;
   padding-left: 21px;
@@ -101,13 +109,6 @@ footer>div.row>div.col-md-6>a.twitter:hover, footer>div.row>div.col-md-6>a.twitt
   height: 39px;
 }
 
-footer>p {
-  display: block;
-  position: relative;
-  bottom: -35px;
-  text-align: center;
-  width: 1024px;
-}
 footer>span.top-line {
   display: block;
   width: 100%;
@@ -116,4 +117,14 @@ footer>span.top-line {
   position: relative;
   top: 0;
   background-image: url(../img/footer-top-line.png);
+}
+
+footer {
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 17px;
+  color: #666;
+  .title{
+    margin-top: 30px;
+    margin-left: 113px;
+  }
 }
