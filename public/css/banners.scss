@@ -1,0 +1,19 @@
+section>div.banner-about {
+  display: block;
+  margin-top: 13px;
+  width: 1024px;
+  height: 494px;
+  background-image: url(../img/banner-about.jpg);
+  background-size: contain;
+}
+
+section>div.banner-about>span.banner-line-bottom{
+  display: block;
+  width: 1024px;
+  height: 15px;
+  position: relative;
+  top: 494px;
+  background-image: url(../img/banner-line-bottom.jpg);
+  background-size: contain;
+}
+

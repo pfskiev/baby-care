@@ -43,3 +43,24 @@
   background-image: url(../img/bottom-line.png);
   z-index: 9999;
 }
+
+.open>.dropdown-menu.about {
+  padding: 10px 10px;
+  display: block;
+  position: absolute;
+  top: 45px;
+  border: none;
+  border-radius: 0;
+  background: $header-color;
+}
+
+.open>.dropdown-menu.about>ul>li{
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.open>.dropdown-menu.about>ul>li>a{
+  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  font-size: 17px;
+  color: #666;
+}
