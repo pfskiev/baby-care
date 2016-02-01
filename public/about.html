@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,125 +8,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>БебиКеа - О нас</title>
+    <title>БебиКеа - Главная</title>
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
-<header class="row">
-    <div class="col-md-4">
-        <a href="index.html"><h1 class="logo"></h1></a>
-        <h2 class="title">Органические товары</h2>
-    </div>
-    <div class="col-md-4">
-        <div class="contact-wrapper">
-            <p><span class="telephone-icon"></span> (044) 229-05-02</p>
-            <p><span class="telephone-icon"></span> (044) 229-05-03</p>
-            <p><span class="life-icon"></span> (093) 306-08-18</p>
+<body class="container-fluid">
+<header>
+    <div class="row visible-xs">
+        <div class="col-xs-6">
+            <a href="/"><h1 class="logo-sm"></h1></a>
+            <h2 class="title">Органические товары</h2>
+        </div>
+        <div class="col-xs-6">
+            <span class="telephone-icon"></span>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="search-wrapper">
-            <input type="text" title="search" placeholder="Поиск">
-            <span class="glyphicon glyphicon-search"></span>
+    <div class="row hidden-xs">
+        <div class="col-sm-4 col-md-4">
+            <a class="hidden-xs" href="/"><h1 class="logo"></h1></a>
+            <a class="visible-xs" href="/"><h1 class="logo-sm"></h1></a>
+            <h2 class="title">Органические товары</h2>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="contact-wrapper">
+                <p><span class="telephone-icon"></span> (044) 229-05-02</p>
+                <p><span class="telephone-icon"></span> (044) 229-05-03</p>
+                <p><span class="life-icon"></span> (093) 306-08-18</p>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="search-wrapper">
+                <input type="text" title="search" placeholder="Поиск">
+                <span class="glyphicon glyphicon-search"></span>
+            </div>
         </div>
     </div>
 </header>
-<nav>
-    <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог <span class="caret"></span></a>
-            <div class="dropdown-menu catalogue">
-                <div class="row">
-                    <div class="col-md-4">
+
+<nav class="navbar navbar-default">
+    <div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon menu"></span>
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-pills nav-justified">
+                <li><a class="active" href="/">Главная</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог <span class="caret"></span></a>
+                    <div class="dropdown-menu catalogue col-md-12">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <ul>
+                                    <li><a class="title" href="#">Многоразовые подгузники</a></li>
+                                    <li><a href="#">- Набор трикотажных подгузников Disana</a></li>
+                                    <li><a href="#">- Комплектующие к  наборам</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="title" href="#">Одежда для детей</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="title" href="#">Одежда для недоношенных деток</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="title" href="#">Нательная одежда для детей (Engel)</a></li>
+                                    <li><a href="#">- Боди</a></li>
+                                    <li><a href="#">- Ползунки и человечки</a></li>
+                                    <li><a href="#">- Штанишки</a></li>
+                                    <li><a href="#">- Боди</a></li>
+                                    <li><a href="#">- Кофты</a></li>
+                                    <li><a href="#">- Леггинсы</a></li>
+                                    <li><a href="#">- Варежки</a></li>
+                                    <li><a href="#">- Шапочки</a></li>
+                                    <li><a href="#">- Тапочки и носочки</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <ul>
+                                    <li><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="title" href="#">Женское термобелье (Engel)</a></li>
+                                    <li><a href="#">- кофты</a></li>
+                                    <li><a href="#">- леггинсы</a></li>
+                                    <li><a href="#">- майки</a></li>
+                                    <li><a href="#">- футболки</a></li>
+                                    <li><a href="#">- шортики</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="title" href="#">Мужское термобелье (Engel)</a></li>
+                                    <li><a href="#">- кофты</a></li>
+                                    <li><a href="#">- леггинсы</a></li>
+                                    <li><a href="#">- майки</a></li>
+                                    <li><a href="#">- футболки</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <ul>
+                                    <li><a class="title" href="#">Стирка Уборка (AlmaWin)</a></li>
+                                    <li><a href="#">- для уборки</a></li>
+                                    <li><a href="#">- для мытья посуды</a></li>
+                                    <li><a href="#">- для стирки</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="title" href="#">Продукты питания (Безглютеновая продукция)</a></li>
+                                    <li><a href="#">- Хлеб</a></li>
+                                    <li><a href="#">- Печенье</a></li>
+                                    <li><a href="#">- Сухие завтраки</a></li>
+                                    <li><a href="#">- Макаронные изделия</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="bottom-line"></span>
+                    </div>
+                </li><!--End of Catalogue dropdown menu-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
+                    <div class="dropdown-menu about">
                         <ul>
-                            <li><a class="title" href="#">Многоразовые подгузники</a></li>
-                            <li><a href="#">- Набор трикотажных подгузников Disana</a></li>
-                            <li><a href="#">- Комплектующие к  наборам</a></li>
-                        </ul>
-                        <ul>
-                            <li><a class="title" href="#">Одежда для детей</a></li>
-                        </ul>
-                        <ul>
-                            <li><a class="title" href="#">Одежда для недоношенных деток</a></li>
-                        </ul>
-                        <ul>
-                            <li><a class="title" href="#">Нательная одежда для детей (Engel)</a></li>
-                            <li><a href="#">- Боди</a></li>
-                            <li><a href="#">- Ползунки и человечки</a></li>
-                            <li><a href="#">- Штанишки</a></li>
-                            <li><a href="#">- Боди</a></li>
-                            <li><a href="#">- Кофты</a></li>
-                            <li><a href="#">- Леггинсы</a></li>
-                            <li><a href="#">- Варежки</a></li>
-                            <li><a href="#">- Шапочки</a></li>
-                            <li><a href="#">- Тапочки и носочки</a></li>
+                            <li><a href="/about">О компании БК</a></li>
+                            <li><a href="/cooperation">Сотрудничество</a></li>
+                            <li><a href="/brands">Бренды</a></li>
+                            <li><a href="/certificates">Знаки сертификации</a></li>
+                            <li><a href="/articles">Статьи</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
-                        </ul>
-                        <ul>
-                            <li><a class="title" href="#">Женское термобелье (Engel)</a></li>
-                            <li><a href="#">- кофты</a></li>
-                            <li><a href="#">- леггинсы</a></li>
-                            <li><a href="#">- майки</a></li>
-                            <li><a href="#">- футболки</a></li>
-                            <li><a href="#">- шортики</a></li>
-                        </ul>
-                        <ul>
-                            <li><a class="title" href="#">Мужское термобелье (Engel)</a></li>
-                            <li><a href="#">- кофты</a></li>
-                            <li><a href="#">- леггинсы</a></li>
-                            <li><a href="#">- майки</a></li>
-                            <li><a href="#">- футболки</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <ul>
-                            <li><a class="title" href="#">Стирка Уборка (AlmaWin)</a></li>
-                            <li><a href="#">- для уборки</a></li>
-                            <li><a href="#">- для мытья посуды</a></li>
-                            <li><a href="#">- для стирки</a></li>
-                        </ul>
-                        <ul>
-                            <li><a class="title" href="#">Продукты питания (Безглютеновая продукция)</a></li>
-                            <li><a href="#">- Хлеб</a></li>
-                            <li><a href="#">- Печенье</a></li>
-                            <li><a href="#">- Сухие завтраки</a></li>
-                            <li><a href="#">- Макаронные изделия</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <span class="bottom-line"></span>
-            </div>
-        </li><!--End of Catalogue dropdown menu-->
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
-            <div class="dropdown-menu about">
-                <ul>
-                    <li><a href="about.html">О компании БК</a></li>
-                    <li><a href="partnership.html">Сотрудничество</a></li>
-                    <li><a href="brands.html">Бренды</a></li>
-                    <li><a href="certificates.html">Знаки сертификации</a></li>
-                    <li><a href="articles.html">Статьи</a></li>
-                </ul>
-            </div>
-        </li><!--End of About dropdown menu-->
-        <li><a href="map.html">Где купить</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <span class="nav-bottom-line"></span>
+                </li><!--End of About dropdown menu-->
+                <li><a href="/map">Где купить</a></li>
+                <li><a href="/contacts">Контакты</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
 </nav>
+<div class="divider">
+    <div class="flex-row">
+        <div style="border-bottom: 15px solid #fad280;" class="flex-item"></div>
+        <div style="border-bottom: 15px solid #bfe79e;" class="flex-item"></div>
+        <div style="border-bottom: 15px solid #fc9f66;" class="flex-item"></div>
+        <div style="border-bottom: 15px solid #48d1cc;" class="flex-item"></div>
+    </div>
+</div>
 <section>
-    <div class="banner-about">
-        <span class="banner-line-bottom"></span>
+    <div class="banner-wrapper">
+        <img src="img/banner-about.jpg" alt="">
     </div>
     <ol class="breadcrumb">
-        <li><a href="index.html">Главная</a></li>
-        <li class="active">О компании бебикеа</li>
+        <li><a href="/">Главная</a></li>
+        <li class="active">О нас</li>
     </ol>
     <div class="row">
         <div class="col-md-3">
@@ -140,24 +172,40 @@
     </div>
 </section>
 <footer>
-    <span class="top-line"></span>
-    <div class="row">
-        <div class="col-md-6">
-            <h3>Подписаться на обновления</h3>
-            <input type="text" title="followers">
-            <a href="">Подписаться</a>
+    <div class="row visible-xs">
+        <div class="col-xs-12">
+            <h3 class="subscribe title">Подписаться на обновления</h3>
+            <input type="text" title="followers" placeholder="Ваш e-mail">
+            <a type="button" class="subscribe button" href="">Подписаться</a>
         </div>
-        <div class="col-md-6">
-            <a href="" class="facebook"></a>
-            <a href="" class="pinterest"></a>
-            <a href="" class="twitter"></a>
+        <div class="col-xs-12">
+            <a href="/" class="icon twitter"></a>
+            <a href="/" class="icon pinterest"></a>
+            <a href="/" class="icon facebook"></a>
+        </div>
+        <div class="col-xs-12">
+            <p>© 2011 ООО «Babycare» — интернет магазин детской одежды</p>
         </div>
     </div>
-    <p>© 2011 ООО «Babycare» — интернет магазин детской одежды</p>
+    <div class="row hidden-xs">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h3 class="subscribe title">Подписаться на обновления</h3>
+            <input type="text" title="followers" placeholder="Ваш e-mail">
+            <a class="subscribe button" href="">Подписаться</a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="/" class="icon twitter"></a>
+            <a href="/" class="icon pinterest"></a>
+            <a href="/" class="icon facebook"></a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p>© 2011 ООО «Babycare» — интернет магазин детской одежды</p>
+        </div>
+    </div>
 </footer>
 
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+<script src="js/main.js"></script>
 </body>
 </html>
