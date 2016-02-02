@@ -42,113 +42,68 @@
         </div>
     </div>
 </header>
-
-<nav class="navbar navbar-default">
-    <div>
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <a type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="icon menu"></span>
-            </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav nav-pills nav-justified">
-                <li><a class="active" href="/">Главная</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог <span class="caret"></span></a>
-                    <div class="dropdown-menu catalogue col-md-12">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6">
-                                <ul>
-                                    <li><a class="title" href="#">Многоразовые подгузники</a></li>
-                                    <li><a href="#">- Набор трикотажных подгузников Disana</a></li>
-                                    <li><a href="#">- Комплектующие к  наборам</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a class="title" href="#">Одежда для детей</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a class="title" href="#">Одежда для недоношенных деток</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a class="title" href="#">Нательная одежда для детей (Engel)</a></li>
-                                    <li><a href="#">- Боди</a></li>
-                                    <li><a href="#">- Ползунки и человечки</a></li>
-                                    <li><a href="#">- Штанишки</a></li>
-                                    <li><a href="#">- Боди</a></li>
-                                    <li><a href="#">- Кофты</a></li>
-                                    <li><a href="#">- Леггинсы</a></li>
-                                    <li><a href="#">- Варежки</a></li>
-                                    <li><a href="#">- Шапочки</a></li>
-                                    <li><a href="#">- Тапочки и носочки</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <ul>
-                                    <li><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a class="title" href="#">Женское термобелье (Engel)</a></li>
-                                    <li><a href="#">- кофты</a></li>
-                                    <li><a href="#">- леггинсы</a></li>
-                                    <li><a href="#">- майки</a></li>
-                                    <li><a href="#">- футболки</a></li>
-                                    <li><a href="#">- шортики</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a class="title" href="#">Мужское термобелье (Engel)</a></li>
-                                    <li><a href="#">- кофты</a></li>
-                                    <li><a href="#">- леггинсы</a></li>
-                                    <li><a href="#">- майки</a></li>
-                                    <li><a href="#">- футболки</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <ul>
-                                    <li><a class="title" href="#">Стирка Уборка (AlmaWin)</a></li>
-                                    <li><a href="#">- для уборки</a></li>
-                                    <li><a href="#">- для мытья посуды</a></li>
-                                    <li><a href="#">- для стирки</a></li>
-                                </ul>
-                                <ul>
-                                    <li><a class="title" href="#">Продукты питания (Безглютеновая продукция)</a></li>
-                                    <li><a href="#">- Хлеб</a></li>
-                                    <li><a href="#">- Печенье</a></li>
-                                    <li><a href="#">- Сухие завтраки</a></li>
-                                    <li><a href="#">- Макаронные изделия</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <span class="bottom-line"></span>
-                    </div>
-                </li><!--End of Catalogue dropdown menu-->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
-                    <div class="dropdown-menu about">
-                        <ul>
-                            <li><a href="/about">О компании БК</a></li>
-                            <li><a href="/cooperation">Сотрудничество</a></li>
-                            <li><a href="/brands">Бренды</a></li>
-                            <li><a href="/certificates">Знаки сертификации</a></li>
-                            <li><a href="/articles">Статьи</a></li>
-                        </ul>
-                    </div>
-                </li><!--End of About dropdown menu-->
-                <li><a href="/map">Где купить</a></li>
-                <li><a href="/contacts">Контакты</a></li>
+<nav>
+    <ul class="flex-row sm-column align-right sm-show">
+        <li class="flex-item-4"><a href="#" class="toggle-nav"><span class="icon menu"></span></a></li>
+    </ul>
+    <ul class="flex-row sm-column space-around collapse-nav">
+        <li><a class="nav-button" href="#">Главная</a></li>
+        <li>
+            <a class="nav-button toggle-dropdown" href="catalogue.html">Каталог</a>
+            <ul class="flex-row wrap sm-wrap sm-column align-left dropdown">
+                <li class="flex-item-3 order-1"><a class="title" href="#">Многоразовые подгузники</a>
+                    <ul class="flex-column space-around">
+                        <li class="flex-item-1"><a href="#">- Набор трикотажных подгузников Disana</a></li>
+                        <li class="flex-item-1"><a href="#">- Комплектующие к  наборам</a></li>
+                    </ul>
+                </li>
+                <li class="flex-item-3 order-3"><a class="title" href="#">Одежда для детей</a></li>
+                <li class="flex-item-3 order-4"><a class="title" href="#">Одежда для недоношенных деток</a></li>
+                <li class="flex-item-3 order-2"><a class="title" href="#">Нательная одежда для детей (Engel)</a>
+                    <ul class="flex-column space-around">
+                        <li class="flex-item-1"><a href="#">- Боди</a></li>
+                        <li class="flex-item-1"><a href="#">- Ползунки и человечки</a></li>
+                        <li class="flex-item-1"><a href="#">- Штанишки</a></li>
+                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
+                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
+                        <li class="flex-item-1"><a href="#">- Варежки</a></li>
+                        <li class="flex-item-1"><a href="#">- Шапочки</a></li>
+                        <li class="flex-item-1"><a href="#">- Тапочки и носочки</a></li>
+                    </ul>
+                </li>
+                <li class="flex-item-3 order-5"><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
+                <li class="flex-item-3 order-7"><a class="title" href="#">Женское термобелье (Engel)</a>
+                    <ul class="flex-column space-around">
+                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
+                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
+                        <li class="flex-item-1"><a href="#">- Майки</a></li>
+                        <li class="flex-item-1"><a href="#">- Футболки</a></li>
+                        <li class="flex-item-1"><a href="#">- Шортики</a></li>
+                    </ul>
+                </li>
+                <li class="flex-item-3 order-6"><a class="title" href="#">Мужское термобелье (Engel)</a>
+                    <ul class="flex-column space-around">
+                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
+                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
+                        <li class="flex-item-1"><a href="#">- Майки</a></li>
+                        <li class="flex-item-1"><a href="#">- Футболки</a></li>
+                    </ul>
+                </li>
             </ul>
-        </div><!-- /.navbar-collapse -->
+        </li>
+        <li><a class="nav-button" href="#">О нас</a></li>
+        <li><a class="nav-button" href="#">Где купить</a></li>
+        <li><a class="nav-button" href="#">Контакты</a></li>
+    </ul>
+    <div class="flex-row">
+        <div style="border-bottom: 15px solid #fad280;" class="flex-item-4"></div>
+        <div style="border-bottom: 15px solid #bfe79e;" class="flex-item-4"></div>
+        <div style="border-bottom: 15px solid #fc9f66;" class="flex-item-4"></div>
+        <div style="border-bottom: 15px solid #48d1cc;" class="flex-item-4"></div>
+    </div>
+    <div class="wrapper-download">
     </div>
 </nav>
-<div class="divider">
-    <div class="flex-row">
-        <div style="border-bottom: 15px solid #fad280;" class="flex-item"></div>
-        <div style="border-bottom: 15px solid #bfe79e;" class="flex-item"></div>
-        <div style="border-bottom: 15px solid #fc9f66;" class="flex-item"></div>
-        <div style="border-bottom: 15px solid #48d1cc;" class="flex-item"></div>
-    </div>
-</div>
 <section>
     <ol class="breadcrumb">
         <li><a href="/">Главная</a></li>
