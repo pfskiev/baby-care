@@ -1,8 +1,12 @@
 $(document).ready(function(){
-    $('a.toggle-dropdown').each(function(){
-        $(this).hover(function() {
-            $('.dropdown').each(function(){
 
+    var $about = $('.dropdown-about'),
+        $catalogue = $('.dropdown-catalogue');
+
+    $('a.toggle-dropdown-catalogue').each(function(){
+        $(this).hover(function() {
+            $about.removeClass('on')
+            $catalogue.each(function(){
                 var menu = $(this);
                 menu.addClass('on');
                 menu.remove();
@@ -15,13 +19,21 @@ $(document).ready(function(){
             })
         });
         $(this).click(function(){
-            $('.dropdown').toggleClass('on');
+            $about.removeClass('on')
+            $catalogue.toggleClass('on');
         })
+    });
+    $('a.toggle-dropdown-about').each(function(){
+        $(this).click(function(){
+            $catalogue.removeClass('on');
+            $about.toggleClass('on');
+
+        });
     });
     $('a.toggle-nav').click(function() {
         $('.collapse-nav').toggleClass('on');
-        if($('.dropdown').hasClass('on')){
-            $('.dropdown').removeClass('on')
+        if($catalogue.hasClass('on')){
+            $catalogue.removeClass('on')
         }
     });
 });
