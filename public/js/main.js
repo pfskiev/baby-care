@@ -24,7 +24,7 @@ $(document).ready(function(){
         })
     });
     $('a.toggle-dropdown-about').each(function(){
-        $(this).click(function(){
+        $(this).hover(function(){
             $catalogue.removeClass('on');
             $about.toggleClass('on');
 
