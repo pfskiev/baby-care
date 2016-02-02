@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     $('a.toggle-dropdown-catalogue').each(function(){
         $(this).hover(function() {
-            $about.removeClass('on')
+            $about.removeClass('on');
             $catalogue.each(function(){
                 var menu = $(this);
                 menu.addClass('on');
@@ -19,15 +19,19 @@ $(document).ready(function(){
             })
         });
         $(this).click(function(){
-            $about.removeClass('on')
+            $about.removeClass('on');
             $catalogue.toggleClass('on');
         })
     });
     $('a.toggle-dropdown-about').each(function(){
         $(this).hover(function(){
             $catalogue.removeClass('on');
-            $about.toggleClass('on');
-
+            $about.addClass('on');
+            $about.each(function(){
+                $(this).mouseleave(function(){
+                    $(this).removeClass('on');
+                });
+            });
         });
     });
     $('a.toggle-nav').click(function() {
