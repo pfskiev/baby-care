@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,186 +6,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>БебиКеа - Главная</title>
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <title>БебиКеа -
+        контакты
+    </title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
-<body class="container-fluid">
-<header>
-    <div class="row visible-xs">
-        <div class="col-xs-6">
-            <a href="/"><h1 class="logo-sm"></h1></a>
-            <h2 class="title">Органические товары</h2>
-        </div>
-        <div class="col-xs-6">
-            <span class="telephone-icon"></span>
+<body>
+
+<header class="flex row">
+    <div class="box-3">
+        <div class="flex column justify">
+            <a href="/"><img src="img/logo_1024.png" width="253" height="51" alt="babycare"></a>
+            <h2>Органические товары</h2>
         </div>
     </div>
-    <div class="row hidden-xs">
-        <div class="col-sm-4 col-md-4">
-            <a class="hidden-xs" href="/"><h1 class="logo"></h1></a>
-            <a class="visible-xs" href="/"><h1 class="logo-sm"></h1></a>
-            <h2 class="title">Органические товары</h2>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="contact-wrapper">
-                <p><span class="telephone-icon"></span> (044) 229-05-02</p>
-                <p><span class="telephone-icon"></span> (044) 229-05-03</p>
-                <p><span class="life-icon"></span> (093) 306-08-18</p>
-            </div>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="search-wrapper">
-                <input type="text" title="search" placeholder="Поиск">
-                <span class="glyphicon glyphicon-search"></span>
-            </div>
-        </div>
+    <div class="box-3 sm-hide">
+        <p><span class="icon cell"></span> (044) 229-05-02</p>
+        <p><span class="icon cell"></span> (044) 229-05-03</p>
+        <p><span class="icon life"></span> (093) 306-08-18</p>
+    </div>
+    <div class="box-3 sm-hide">
+        <form method="GET" action="">
+            <input type="text" name="q" value="" class="sm-hide" placeholder="Поиск">
+        </form>
     </div>
 </header>
+
 <nav>
-    <ul class="flex-row sm-column align-right sm-show">
-        <li class="flex-item-4"><a href="#" class="toggle-nav"><span class="icon menu"></span></a></li>
-    </ul>
-    <ul class="flex-row sm-column space-around collapse-nav">
-        <li><a class="nav-button" href="index.html">Главная</a></li>
+    <a class="dropdown-toggle sm-show" href="#"><span class="menu"></span></a>
+    <ul class="flex row sm-column sm-dropdown">
         <li>
-            <a class="nav-button toggle-dropdown-catalogue" href="catalogue.html">Каталог</a>
-            <ul class="flex-row wrap sm-wrap sm-column align-left dropdown-catalogue">
-                <li class="flex-item-3 order-1"><a class="title" href="#">Многоразовые подгузники</a>
-                    <ul class="flex-column space-around">
-                        <li class="flex-item-1"><a href="#">- Набор трикотажных подгузников Disana</a></li>
-                        <li class="flex-item-1"><a href="#">- Комплектующие к  наборам</a></li>
+            <form method="GET" action="">
+                <input type="text" name="q" value="" class="sm-show" placeholder="Поиск">
+            </form>
+        </li>
+        <li class="box-5"><a href="/">Главная</a></li>
+        <li class="box-5">
+            <a class="dropdown-toggle" href="#">Каталог</a>
+            <ul class="flex row wrap sm-column dropdown">
+                <li class="box-3">
+                    <ul class="flex column">
+                        <li class="box"><a class="dropdown-toggle title" href="#">Многоразовые подгузники</a>
+                            <ul class="flex column sm-dropdown">
+                                <li class="box"><a href="#"><span>- </span>Набор трикотажных подгузников Disana</a></li>
+                                <li class="box"><a href="#"><span>- </span>Комплектующие к наборам</a></li>
+                            </ul>
+                        </li>
+                        <li class="box"><a class="title" href="#">Одежда для детей</a></li>
+                        <li class="box"><a class="title" href="#">Одежда для недоношенных деток</a></li>
+                        <li class="box"><a class="dropdown-toggle title" href="#">Нательная одежда для детей (Engel)</a>
+                            <ul class="flex column sm-dropdown">
+                                <li class="box"><a href="#"><span>- </span>Боди</a></li>
+                                <li class="box"><a href="#"><span>- </span>Ползунки и человечки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Штанишки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Варежки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Шапочки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Тапочки и носочки</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li class="flex-item-3 order-3"><a class="title" href="#">Одежда для детей</a></li>
-                <li class="flex-item-3 order-4"><a class="title" href="#">Одежда для недоношенных деток</a></li>
-                <li class="flex-item-3 order-2"><a class="title" href="#">Нательная одежда для детей (Engel)</a>
-                    <ul class="flex-column space-around">
-                        <li class="flex-item-1"><a href="#">- Боди</a></li>
-                        <li class="flex-item-1"><a href="#">- Ползунки и человечки</a></li>
-                        <li class="flex-item-1"><a href="#">- Штанишки</a></li>
-                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
-                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
-                        <li class="flex-item-1"><a href="#">- Варежки</a></li>
-                        <li class="flex-item-1"><a href="#">- Шапочки</a></li>
-                        <li class="flex-item-1"><a href="#">- Тапочки и носочки</a></li>
+                <li class="box-3">
+                    <ul class="flex column">
+                        <li class="box"><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
+                        <li class="box"><a class="dropdown-toggle title" href="#">Нательная одежда для детей (Engel)</a>
+                            <ul class="flex column sm-dropdown">
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Майки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Футболки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Шортики</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li class="flex-item-3 order-5"><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
-                <li class="flex-item-3 order-7"><a class="title" href="#">Женское термобелье (Engel)</a>
-                    <ul class="flex-column space-around">
-                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
-                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
-                        <li class="flex-item-1"><a href="#">- Майки</a></li>
-                        <li class="flex-item-1"><a href="#">- Футболки</a></li>
-                        <li class="flex-item-1"><a href="#">- Шортики</a></li>
-                    </ul>
-                </li>
-                <li class="flex-item-3 order-6"><a class="title" href="#">Мужское термобелье (Engel)</a>
-                    <ul class="flex-column space-around">
-                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
-                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
-                        <li class="flex-item-1"><a href="#">- Майки</a></li>
-                        <li class="flex-item-1"><a href="#">- Футболки</a></li>
+                <li class="box-3">
+                    <ul class="flex column">
+                        <li class="box"><a class="dropdown-toggle" href="#">Мужское термобелье (Engel)</a>
+                            <ul class="flex column sm-dropdown">
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Майки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Футболки</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </li>
-        <li>
-            <a class="nav-button toggle-dropdown-about" href="#">О нас</a>
-            <ul class="flex-column align-left dropdown-about">
-                <li class="flex-item-1"><a href="about.html">О компании БК</a></li>
-                <li class="flex-item-1"><a href="partnership.html">Сотрудничество</a></li>
-                <li class="flex-item-1"><a href="brands.html">Бренды</a></li>
-                <li class="flex-item-1"><a href="certificates.html">Знаки сертификации</a></li>
-                <li class="flex-item-1"><a href="articles.html">Статьи</a></li>
+        <li class="box-5 about">
+            <a class="dropdown-toggle" href="#">О нас</a>
+            <ul class="flex column dropdown about">
+                <li class="box"><a href="about.html">О компании БК</a></li>
+                <li class="box"><a href="cooperation.html">Сотрудничество</a></li>
+                <li class="box"><a href="brands.html">Бренды</a></li>
+                <li class="box"><a href="certificates.html">Знаки сертификации</a></li>
+                <li class="box"><a href="articles.html">Статьи</a></li>
             </ul>
         </li>
-        <li><a class="nav-button" href="map.html">Где купить</a></li>
-        <li><a class="nav-button" href="contacts.html">Контакты</a></li>
+        <li class="box-5"><a href="map.html">Где купить</a></li>
+        <li class="box-5"><a href="contacts.html">Контакты</a></li>
     </ul>
-    <div class="flex-row">
-        <div style="border-bottom: 15px solid #fad280;" class="flex-item-4"></div>
-        <div style="border-bottom: 15px solid #bfe79e;" class="flex-item-4"></div>
-        <div style="border-bottom: 15px solid #fc9f66;" class="flex-item-4"></div>
-        <div style="border-bottom: 15px solid #48d1cc;" class="flex-item-4"></div>
-    </div>
-    <div class="wrapper-download">
-    </div>
+    <div class="divider"></div>
 </nav>
+
 <section>
-    <ol class="breadcrumb">
-        <li><a href="index.html">Главная</a></li>
-        <li class="active">Контакты</li>
-    </ol>
-    <div class="row">
-        <div class="col-md-3">
-            <a href="index.html"><img src="img/contacts-logo.png" alt=""></a>
-        </div>
-        <div class="col-md-9">
-            <p class="title main">Контакты</p>
-            <div>
-                <p class="title">г. Киев, пер. Делегатский, 12</p>
-                <p>9:00 - 18:00 пн-пт</p>
+
+    <div class="flex row sm-column">
+        <div class="box-8">
+            <div class="flex column justify">
             </div>
-            <div>
-                <p class="title">По вопросам сотрудничества:</p>
-                <p>+380 (44) 229-05-03</p>
+        </div>
+        <div class="box-2">
+            <div class="flex column left">
+                <h3>КОНТАКТЫ</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="flex row sm-column">
+        <div class="box-8">
+            <div class="flex column justify">
+
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="flex column left">
+                <h4>Оптовые закупки:</h4>
+                <p>+380 (44) 229-05-02</p>
                 <p>contacts@babycare.com.ua</p>
             </div>
-            <div>
-                <p class="title">Оптовые закупки:</p>
+        </div>
+    </div>
+
+    <div class="flex row sm-column">
+        <div class="box-8">
+            <div class="flex column justify">
+
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="flex column left">
+                <h4>Оптовые закупки:</h4>
                 <p>+380 (44) 229-05-02</p>
-                <p>+380 (93) 306-08-18</p>
-                <p>ХХХХХ@babycare.com.ua</p>
+                <p>sales@babycare.com.ua</p>
             </div>
-            <div>
-                <p class="title">Розничные заказы и консультации:</p>
-                <p>+380 (44) 353-23-39</p>
-                <p>хххххх@babycare.com.ua</p>
+        </div>
+    </div>
+
+    <div class="flex row sm-column">
+        <div class="box-8">
+            <div class="flex column justify">
+
             </div>
-            <div>
-                <p class="title">Отдел рекламы и маркетинга:</p>
+        </div>
+        <div class="box-2">
+            <div class="flex column left">
+                <h4>Отдел рекламы и маркетинга:</h4>
                 <p>+380 (44) 229-05-03</p>
                 <p>oksana@babycare.com.ua</p>
             </div>
         </div>
     </div>
-</section>
-<footer>
-    <div class="row visible-xs">
-        <div class="col-xs-12">
-            <h3 class="subscribe title">Подписаться на обновления</h3>
-            <input type="text" title="followers" placeholder="Ваш e-mail">
-            <a type="button" class="subscribe button" href="">Подписаться</a>
+
+    <div class="flex row sm-column">
+        <div class="box-8">
+            <div class="flex column justify">
+
+            </div>
         </div>
-        <div class="col-xs-12">
-            <a href="/" class="icon twitter"></a>
-            <a href="/" class="icon pinterest"></a>
-            <a href="/" class="icon facebook"></a>
-        </div>
-        <div class="col-xs-12">
-            <p>© 2011 ООО «Babycare» — интернет магазин детской одежды</p>
+        <div class="box-2">
+            <div class="flex column left">
+                <h4>По вопросам сотрудничества:</h4>
+                <p>+380 (44) 229-05-03</p>
+                <p>contacts@babycare.com.ua</p>
+            </div>
         </div>
     </div>
-    <div class="row hidden-xs">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h3 class="subscribe title">Подписаться на обновления</h3>
-            <input type="text" title="followers" placeholder="Ваш e-mail">
-            <a class="subscribe button" href="">Подписаться</a>
+
+    <div class="flex row sm-column">
+        <div class="box-8">
+            <div class="flex column justify">
+
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <a href="/" class="icon twitter"></a>
-            <a href="/" class="icon pinterest"></a>
-            <a href="/" class="icon facebook"></a>
+        <div class="box-2">
+            <div class="flex column left">
+                <h4>Розничные заказы и консультации:</h4>
+                <p>+380 (44) 353-23-39</p>
+                <p>marketsales@babycare.com.ua</p>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p>© 2011 ООО «Babycare» — интернет магазин детской одежды</p>
-        </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+
+<footer class="flex row wrap sm-column">
+    <div class="box-3">
+        <h3>Подписаться на обновления</h3>
+        <input type="text" title="followers" placeholder="Ваш e-mail">
+        <a class="subscribe" href="">Подписаться</a>
+    </div>
+    <div class="box-7">
+        <a href="/" class="icon twitter"></a>
+        <a href="/" class="icon pinterest"></a>
+        <a href="/" class="icon facebook"></a>
+    </div>
+    <div class="box">
+        <p>© 2011 -  2016  ООО «Babycare» — интернет магазин детской одежды</p>
     </div>
 </footer>
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

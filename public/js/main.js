@@ -1,43 +1,40 @@
+/**
+ * Created by konstantin on 04.02.16.
+ */
 $(document).ready(function(){
 
-    var $about = $('.dropdown-about'),
-        $catalogue = $('.dropdown-catalogue');
+    var divider = '<div class="flex row">' +
+        '<div style="border-bottom: 15px solid #fad280" class="box-4"></div>' +
+        '<div style="border-bottom: 15px solid #bfe79e" class="box-4"></div>' +
+        '<div style="border-bottom: 15px solid #fc9f66" class="box-4"></div>' +
+        '<div style="border-bottom: 15px solid #48d1cc" class="box-4"></div>' +
+        '</div>';
 
-    $('a.toggle-dropdown-catalogue').each(function(){
-        $(this).hover(function() {
-            $about.removeClass('on');
-            $catalogue.each(function(){
-                var menu = $(this);
-                menu.addClass('on');
-                menu.remove();
-                $('.wrapper-download').each(function(){
-                    $(this).append(menu);
-                    $(this).mouseleave(function(){
-                        menu.removeClass('on');
-                    });
-                })
-            })
-        });
+    $('div.divider').append(divider);
+
+    $('a.dropdown-toggle').each(function(){
         $(this).click(function(){
-            $about.removeClass('on');
-            $catalogue.toggleClass('on');
+            $(this).next().toggleClass('on');
+            //if($('ul ul.on').length > 1){
+            //    $('ul ul.on').removeClass('on');
+            //    $(this).next().addClass('on')
+            //}
+        });
+    });
+
+    $('section.cont').click(function(){
+        $('.on').each(function(){
+            $(this).removeClass('on')
         })
     });
-    $('a.toggle-dropdown-about').each(function(){
-        $(this).hover(function(){
-            $catalogue.removeClass('on');
-            $about.addClass('on');
-            $about.each(function(){
-                $(this).mouseleave(function(){
-                    $(this).removeClass('on');
-                });
-            });
-        });
-    });
-    $('a.toggle-nav').click(function() {
-        $('.collapse-nav').toggleClass('on');
-        if($catalogue.hasClass('on')){
-            $catalogue.removeClass('on')
+
+    $(document).keyup(function(e) {
+        if (e.keyCode === 27) {
+            $('.on').removeClass('on');
         }
     });
+
 });
+
+
+

@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,302 +7,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>БебиКеа - Главная</title>
-    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <title>БебиКеа -
+        Главная
+    </title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
 </head>
-<body class="container-fluid">
-<header>
-    <div class="row visible-xs">
-        <div class="col-xs-6">
-            <a href="/"><h1 class="logo-sm"></h1></a>
-            <h2 class="title">Органические товары</h2>
-        </div>
-        <div class="col-xs-6">
-            <span class="telephone-icon"></span>
+<body>
+
+<header class="flex row">
+    <div class="box-3">
+        <div class="flex column justify">
+            <a href="/"><img src="img/logo_1024.png" width="253" height="51" alt="babycare"></a>
+            <h2>Органические товары</h2>
         </div>
     </div>
-    <div class="row hidden-xs">
-        <div class="col-sm-4 col-md-4">
-            <a class="hidden-xs" href="/"><h1 class="logo"></h1></a>
-            <a class="visible-xs" href="/"><h1 class="logo-sm"></h1></a>
-            <h2 class="title">Органические товары</h2>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="contact-wrapper">
-                <p><span class="telephone-icon"></span> (044) 229-05-02</p>
-                <p><span class="telephone-icon"></span> (044) 229-05-03</p>
-                <p><span class="life-icon"></span> (093) 306-08-18</p>
-            </div>
-        </div>
-        <div class="col-sm-4 col-md-4">
-            <div class="search-wrapper">
-                <input type="text" title="search" placeholder="Поиск">
-                <span class="glyphicon glyphicon-search"></span>
-            </div>
-        </div>
+    <div class="box-3 sm-hide">
+        <p><span class="icon cell"></span> (044) 229-05-02</p>
+        <p><span class="icon cell"></span> (044) 229-05-03</p>
+        <p><span class="icon life"></span> (093) 306-08-18</p>
+    </div>
+    <div class="box-3 sm-hide">
+        <form method="GET" action="">
+            <input type="text" name="q" value="" class="sm-hide" placeholder="Поиск">
+        </form>
     </div>
 </header>
+
 <nav>
-    <ul class="flex-row sm-column align-right sm-show">
-        <li class="flex-item-4"><a href="#" class="toggle-nav"><span class="icon menu"></span></a></li>
-    </ul>
-    <ul class="flex-row sm-column space-around collapse-nav">
-        <li><a class="nav-button" href="index.html">Главная</a></li>
+    <a class="dropdown-toggle sm-show" href="#"><span class="menu"></span></a>
+    <ul class="flex row sm-column sm-dropdown">
         <li>
-            <a class="nav-button toggle-dropdown-catalogue" href="catalogue.html">Каталог</a>
-            <ul class="flex-row wrap sm-wrap sm-column align-left dropdown-catalogue">
-                <li class="flex-item-3 order-1"><a class="title" href="#">Многоразовые подгузники</a>
-                    <ul class="flex-column space-around">
-                        <li class="flex-item-1"><a href="#">- Набор трикотажных подгузников Disana</a></li>
-                        <li class="flex-item-1"><a href="#">- Комплектующие к  наборам</a></li>
+            <form method="GET" action="">
+                <input type="text" name="q" value="" class="sm-show" placeholder="Поиск">
+            </form>
+        </li>
+        <li class="box-5"><a href="/">Главная</a></li>
+        <li class="box-5">
+            <a class="dropdown-toggle" href="#">Каталог</a>
+            <ul class="flex row wrap sm-column dropdown">
+                <li class="box-3">
+                    <ul class="flex column">
+                        <li class="box"><a class="dropdown-toggle title" href="#">Многоразовые подгузники</a>
+                            <ul class="flex column sm-dropdown">
+                                <li class="box"><a href="#"><span>- </span>Набор трикотажных подгузников Disana</a></li>
+                                <li class="box"><a href="#"><span>- </span>Комплектующие к наборам</a></li>
+                            </ul>
+                        </li>
+                        <li class="box"><a class="title" href="#">Одежда для детей</a></li>
+                        <li class="box"><a class="title" href="#">Одежда для недоношенных деток</a></li>
+                        <li class="box"><a class="dropdown-toggle title" href="#">Нательная одежда для детей (Engel)</a>
+                            <ul class="flex column sm-dropdown">
+                                <li class="box"><a href="#"><span>- </span>Боди</a></li>
+                                <li class="box"><a href="#"><span>- </span>Ползунки и человечки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Штанишки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Варежки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Шапочки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Тапочки и носочки</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li class="flex-item-3 order-3"><a class="title" href="#">Одежда для детей</a></li>
-                <li class="flex-item-3 order-4"><a class="title" href="#">Одежда для недоношенных деток</a></li>
-                <li class="flex-item-3 order-2"><a class="title" href="#">Нательная одежда для детей (Engel)</a>
-                    <ul class="flex-column space-around">
-                        <li class="flex-item-1"><a href="#">- Боди</a></li>
-                        <li class="flex-item-1"><a href="#">- Ползунки и человечки</a></li>
-                        <li class="flex-item-1"><a href="#">- Штанишки</a></li>
-                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
-                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
-                        <li class="flex-item-1"><a href="#">- Варежки</a></li>
-                        <li class="flex-item-1"><a href="#">- Шапочки</a></li>
-                        <li class="flex-item-1"><a href="#">- Тапочки и носочки</a></li>
+                <li class="box-3">
+                    <ul class="flex column">
+                        <li class="box"><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
+                        <li class="box"><a class="dropdown-toggle title" href="#">Нательная одежда для детей (Engel)</a>
+                            <ul class="flex column sm-dropdown">
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Майки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Футболки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Шортики</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li class="flex-item-3 order-5"><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
-                <li class="flex-item-3 order-7"><a class="title" href="#">Женское термобелье (Engel)</a>
-                    <ul class="flex-column space-around">
-                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
-                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
-                        <li class="flex-item-1"><a href="#">- Майки</a></li>
-                        <li class="flex-item-1"><a href="#">- Футболки</a></li>
-                        <li class="flex-item-1"><a href="#">- Шортики</a></li>
-                    </ul>
-                </li>
-                <li class="flex-item-3 order-6"><a class="title" href="#">Мужское термобелье (Engel)</a>
-                    <ul class="flex-column space-around">
-                        <li class="flex-item-1"><a href="#">- Кофты</a></li>
-                        <li class="flex-item-1"><a href="#">- Леггинсы</a></li>
-                        <li class="flex-item-1"><a href="#">- Майки</a></li>
-                        <li class="flex-item-1"><a href="#">- Футболки</a></li>
+                <li class="box-3">
+                    <ul class="flex column">
+                        <li class="box"><a class="dropdown-toggle" href="#">Мужское термобелье (Engel)</a>
+                            <ul class="flex column sm-dropdown">
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Майки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Футболки</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </li>
-        <li>
-            <a class="nav-button toggle-dropdown-about" href="#">О нас</a>
-            <ul class="flex-column align-left dropdown-about">
-                <li class="flex-item-1"><a href="about.html">О компании БК</a></li>
-                <li class="flex-item-1"><a href="partnership.html">Сотрудничество</a></li>
-                <li class="flex-item-1"><a href="brands.html">Бренды</a></li>
-                <li class="flex-item-1"><a href="certificates.html">Знаки сертификации</a></li>
-                <li class="flex-item-1"><a href="articles.html">Статьи</a></li>
+        <li class="box-5 about">
+            <a class="dropdown-toggle" href="#">О нас</a>
+            <ul class="flex column dropdown about">
+                <li class="box"><a href="about.html">О компании БК</a></li>
+                <li class="box"><a href="cooperation.html">Сотрудничество</a></li>
+                <li class="box"><a href="brands.html">Бренды</a></li>
+                <li class="box"><a href="certificates.html">Знаки сертификации</a></li>
+                <li class="box"><a href="articles.html">Статьи</a></li>
             </ul>
         </li>
-        <li><a class="nav-button" href="map.html">Где купить</a></li>
-        <li><a class="nav-button" href="contacts.html">Контакты</a></li>
+        <li class="box-5"><a href="map.html">Где купить</a></li>
+        <li class="box-5"><a href="contacts.html">Контакты</a></li>
     </ul>
-    <div class="flex-row">
-        <div style="border-bottom: 15px solid #fad280;" class="flex-item-4"></div>
-        <div style="border-bottom: 15px solid #bfe79e;" class="flex-item-4"></div>
-        <div style="border-bottom: 15px solid #fc9f66;" class="flex-item-4"></div>
-        <div style="border-bottom: 15px solid #48d1cc;" class="flex-item-4"></div>
-    </div>
-    <div class="wrapper-download">
-    </div>
+    <div class="divider"></div>
 </nav>
 <section>
-    <ol class="breadcrumb">
-        <li><a href="catalogue.html">Каталог</a></li>
-        <li><a href="index.html">Нательная одежда для детей (Engel)</a></li>
-        <li class="active">Комбинезон с капюшоном</li>
-    </ol>
-    <div class="row">
-        <div class="col-md-3">
+
+    <div class="flex row sm-column">
+        <div class="box-8">
+            <div class="flex column justify">
+            </div>
         </div>
-        <div class="col-md-9">
-            <p class="title main">Комбинезон с капюшоном шерсть Disana</p>
+        <div class="box-2">
+            <div class="flex column left">
+                <h3>Нательная одежда для детей (Engel)</h3>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div>
-                <a type="button" data-toggle="collapse" data-target="#demo">Многоразовые подгузники</a>
-                <div id="demo" class="collapse">
-                    <a href="#">- Набор трикотажных подгузников Disana</a>
-                    <a href="#">- Комплектующие к  наборам</a>
-                </div>
-            </div>
-            <div>
-                <a type="button" href="#">Одежда для детей</a>
-            </div>
-            <div>
-                <a type="button" href="#">Одежда для недоношенных деток</a>
-            </div>
-            <div>
-                <a type="button" data-toggle="collapse" data-target="#demo1">Нательная одежда для детей (Engel)</a>
-                <div id="demo1" class="collapse">
-                    <a href="#">- Боди</a>
-                    <a href="#">- Ползунки и человечки</a>
-                    <a href="#">- Штанишки</a>
-                    <a href="#">- Боди</a>
-                    <a href="#">- Кофты</a>
-                    <a href="#">- Леггинсы</a>
-                    <a href="#">- Варежки</a>
-                    <a href="#">- Шапочки</a>
-                    <a href="#">- Тапочки и носочки</a>
-                </div>
-            </div>
-            <div>
-                <a type="button" href="#">Верхняя одажда для детей (Disana)</a>
-            </div>
-            <div>
-                <a type="button" data-toggle="collapse" data-target="#demo2">Женское термобелье (Engel)</a>
-                <div id="demo2" class="collapse">
-                    <a href="#">- кофты</a>
-                    <a href="#">- леггинсы</a>
-                    <a href="#">- майки</a>
-                    <a href="#">- футболки</a>
-                    <a href="#">- шортики</a>
-                </div>
-            </div>
-            <div>
-                <a type="button" data-toggle="collapse" data-target="#demo3">Мужское термобелье (Engel)</a>
-                <div id="demo3" class="collapse">
-                    <a href="#">- кофты</a>
-                    <a href="#">- леггинсы</a>
-                    <a href="#">- майки</a>
-                    <a href="#">- футболки</a>
-                </div>
-            </div>
-            <div>
-                <a type="button" data-toggle="collapse" data-target="#demo4">Стирка Уборка (AlmaWin)</a>
-                <div id="demo4" class="collapse">
-                    <a href="#">- для уборки</a>
-                    <a href="#">- для мытья посуды</a>
-                    <a href="#">- для стирки</a>
-                </div>
-            </div>
-            <div>
-                <a type="button" data-toggle="collapse" data-target="#demo5">Продукты питания (Безглютеновая продукция)</a>
-                <div id="demo5" class="collapse">
-                    <a href="#">- Хлеб</a>
-                    <a href="#">- Печенье</a>
-                    <a href="#">- Сухие завтраки</a>
-                    <a href="#">- Макаронные изделия</a>
-                </div>
+
+
+    <div class="flex row sm-column">
+        <div class="box-8">
+            <div class="flex column left">
+                <aside class="sm-hide">
+                    <ul class="flex column">
+                        <li class="box"><a class="title" href="#">Многоразовые подгузники</a>
+                            <ul class="flex column">
+                                <li class="box"><a href="#"><span>- </span>Набор трикотажных подгузников Disana</a></li>
+                                <li class="box"><a href="#"><span>- </span>Комплектующие к наборам</a></li>
+                            </ul>
+                        </li>
+                        <li class="box"><a class="title" href="#">Одежда для детей</a></li>
+                        <li class="box"><a class="title" href="#">Одежда для недоношенных деток</a></li>
+                        <li class="box"><a class="title" href="#">Нательная одежда для детей (Engel)</a>
+                            <ul class="flex column">
+                                <li class="box"><a href="#"><span>- </span>Боди</a></li>
+                                <li class="box"><a href="#"><span>- </span>Ползунки и человечки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Штанишки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Варежки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Шапочки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Тапочки и носочки</a></li>
+                            </ul>
+                        </li>
+                        <li class="box"><a class="title" href="#">Верхняя одажда для детей (Disana)</a></li>
+                        <li class="box"><a class="title" href="#">Нательная одежда для детей (Engel)</a>
+                            <ul class="flex column">
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Майки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Футболки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Шортики</a></li>
+                            </ul>
+                        </li>
+                        <li class="box"><a class="title" href="#">Мужское термобелье (Engel)</a>
+                            <ul class="flex column">
+                                <li class="box"><a href="#"><span>- </span>Кофты</a></li>
+                                <li class="box"><a href="#"><span>- </span>Леггинсы</a></li>
+                                <li class="box"><a href="#"><span>- </span>Майки</a></li>
+                                <li class="box"><a href="#"><span>- </span>Футболки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
             </div>
         </div>
-        <div class="col-md-9">
-            <div class="row">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href=""><img src="img/product-1-lg.png" alt=""></a>
+        <div class="box-2">
+            <div class="flex column left">
+                <div class="flex row sm-column wrap">
+                    <div class="box-2">
+                        <a href="#"><img src="/static/chart/media/./product-1.png" alt=""></a>
                     </div>
-                    <div class="col-md-6">
-                        <p>800 ГРН</p>
-                        <p>Размер/вес (фильтр)</p>
-                        <p>Знак сертификации:</p>
-                        <a href=""><img src="img/logo-organic-sm.png" alt=""></a>
-                        <a href=""><img src="img/logo-lohas-sm.png" alt=""></a>
-                        <div>
-                            <a href="" class="facebook"></a>
-                            <a href="" class="pinterest"></a>
-                            <a href="" class="twitter"></a>
-                        </div>
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                            </ol>
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="img/product-1-xs.png" alt="Chania">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <img src="img/product-2-xs.png" alt="Chania">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <img src="img/product-1-xs.png" alt="Chania">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <img src="img/product-2-xs.png" alt="Chania">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Left and right controls -->
-                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
+                    <div class="box-2">
+                        <p>500</p>
+                        <h4>Product</h4>
+                        <p>awesome</p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <p>В составе комбинезона теплая, мягкая и легкая мериносовая шерсть. В натуральном комбинезоне Вашему малышу будет комфортно как при активных играх, так и лежа в коляске. Уникальность шерсти состоит в том, что при любой погоде в ней будет не холодно, но и не жарко. В комбинезоне есть дополнительная хлопковая подкладка и капюшон. Надежные швы и продуманная конструкция комбинезона говорят о высоком качестве изделия, которое Вы сможете легко проверить и оставить комбинезон в приданое.
-
-                            Пуговицы в комбенизоне сделаны из натуральных материалов. Стопы и ладошки можно дополнительно утеплить специальными манжетами.
-
-                            Теплая и незаменимая вещь для прогулок во время прохладной погоды. </p>
+                    <div class="box">
+                        <p>В составе комбинезона теплая, мягкая и легкая мериносовая шерсть. В натуральном комбинезоне Вашему малышу будет комфортно как при активных играх, так и лежа в коляске. Уникальность шерсти состоит в том, что при любой погоде в ней будет не холодно, но и не жарко. В комбинезоне есть дополнительная хлопковая подкладка и капюшон. Надежные швы и продуманная конструкция комбинезона говорят о высоком качестве изделия, которое Вы сможете легко проверить и оставить комбинезон в приданое. Пуговицы в комбинезоне сделаны из натуральных материалов.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 </section>
-<footer>
-    <div class="row visible-xs">
-        <div class="col-xs-12">
-            <h3 class="subscribe title">Подписаться на обновления</h3>
-            <input type="text" title="followers" placeholder="Ваш e-mail">
-            <a type="button" class="subscribe button" href="">Подписаться</a>
-        </div>
-        <div class="col-xs-12">
-            <a href="/" class="icon twitter"></a>
-            <a href="/" class="icon pinterest"></a>
-            <a href="/" class="icon facebook"></a>
-        </div>
-        <div class="col-xs-12">
-            <p>© 2011 ООО «Babycare» — интернет магазин детской одежды</p>
-        </div>
+<footer class="flex row wrap sm-column">
+    <div class="box-3">
+        <h3>Подписаться на обновления</h3>
+        <input type="text" title="followers" placeholder="Ваш e-mail">
+        <a class="subscribe" href="">Подписаться</a>
     </div>
-    <div class="row hidden-xs">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h3 class="subscribe title">Подписаться на обновления</h3>
-            <input type="text" title="followers" placeholder="Ваш e-mail">
-            <a class="subscribe button" href="">Подписаться</a>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <a href="/" class="icon twitter"></a>
-            <a href="/" class="icon pinterest"></a>
-            <a href="/" class="icon facebook"></a>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p>© 2011 ООО «Babycare» — интернет магазин детской одежды</p>
-        </div>
+    <div class="box-7">
+        <a href="/" class="icon twitter"></a>
+        <a href="/" class="icon pinterest"></a>
+        <a href="/" class="icon facebook"></a>
+    </div>
+    <div class="box">
+        <p>© 2011 -  2016  ООО «Babycare» — интернет магазин детской одежды</p>
     </div>
 </footer>
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
